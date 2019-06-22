@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1559401362 source:d:\programming essentials\my programs\2048 game console version\game.cpp
+	"Game.h"
+
+1559400423 d:\programming essentials\my programs\2048 game console version\game.h
+	<fstream>
+	<string>
+	<iomanip>
+	<time.h>
+	"Utilities.h"
+	"Debugger.h"
+	"Player.h"
+
+1559387399 source:d:\programming essentials\my programs\2048 game console version\main.cpp
+	"Game.h"
+
+1559401675 source:d:\programming essentials\my programs\2048 game console version\debugger.cpp
+	"Debugger.h"
+
+1559401674 d:\programming essentials\my programs\2048 game console version\debugger.h
+	<iostream>
+	<string>
+	"Utilities.h"
+
+1559390342 d:\programming essentials\my programs\2048 game console version\utilities.h
+	"rlutil.h"
+	"Debugger.h"
+
+1559302759 d:\programming essentials\my programs\2048 game console version\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1559390375 source:d:\programming essentials\my programs\2048 game console version\utilities.cpp
+	"Utilities.h"
+
+1559400374 d:\programming essentials\my programs\2048 game console version\player.h
+	<cstring>
+
+1559400401 source:d:\programming essentials\my programs\2048 game console version\player.cpp
+	"Player.h"
+
