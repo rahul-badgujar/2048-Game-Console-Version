@@ -37,14 +37,14 @@
 			<Cursor1 position="8833" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Utilities.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="441" topLine="9" />
-		</Cursor>
-	</File>
 	<File name="Debugger.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="184" topLine="1" />
+			<Cursor1 position="184" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Utilities.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="441" topLine="2" />
 		</Cursor>
 	</File>
 	<File name="Debugger.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">

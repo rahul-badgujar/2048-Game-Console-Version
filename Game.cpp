@@ -97,8 +97,8 @@ void Game::gameLoop()   // continuesly runs the game
         do
         {
             actionKey=takeGameInput();  // take user action
-            actionKey=toupper(actionKey);   // convert the character to uppercase for ease of handling
-        }while(actionKey!='W' && actionKey!='S' && actionKey!='A' && actionKey!='D');   // continue to read till incorrect action choosen
+            actionKey=toupper(actionKey);// convert the character to uppercase for ease of handling
+        }while(actionKey!='W' && actionKey!='S' && actionKey!='A' && actionKey!='D' && actionKey!='X');   // continue to read till incorrect action choosen
         handleGameInput(actionKey);     // handles the user action in GamePlay
     }
     rlutil::cls();  // clear the screen
@@ -176,6 +176,8 @@ void Game::showGamePlayPanel()  // shows Game Panel
     rlutil::setColor(rlutil::COLORS::YELLOW);
     rlutil::locate(65,8);  std::cout<<"UP    :  W";     rlutil::locate(65,10);  std::cout<<"DOWN  :  S";
     rlutil::locate(65,12);  std::cout<<"LEFT  :  A";   rlutil::locate(65,14);  std::cout<<"RIGHT :  D";
+    rlutil::setColor(rlutil::COLORS::LIGHTRED);
+    rlutil::locate(65,17);  std::cout<<"EXIT  :  X";
     rlutil::setColor(Utilities::defaultTextColor);  // reset default color
     // display Score of Player
     Utilities::print("\n\n\n\n\n\n\n\n \t\t\t\t  SCORE : "+std::to_string(player->getPlayerScore()),true,rlutil::COLORS::LIGHTGREEN,0);
@@ -189,6 +191,9 @@ void Game::handleGameInput(const char& actionKey)  // handles the GamePlay input
 {
     switch(actionKey)   // switch for the input actions
     {
+        case 'X':
+            gameOver=true; return;
+            break;
         case 'W':   // W for UP Action, calls the corresponding function
             actionUp();
             break;
